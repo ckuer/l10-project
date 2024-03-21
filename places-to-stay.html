@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to stay in Topsail Beach North Carolina</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CDN Font Awesome library for hamburger menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- container for body content -->
+    <div class="body-grid-container no-aside">
+        <!-- HEADER (same on all pages) -->
+        <header class="body-grid-item">
+            <h1><a href="index.html">Visit Topsail Beach, NC</a></h1>
+            <nav id="nav-links" class="topnav">
+                <a href="index.html#about">About</a>
+                <a href="things-to-do.html">Things to Do</a>
+                <a href="places-to-stay.html">Places to Stay</a>
+                <a href="#contact">Contact us</a>
+                <!-- Hamburger menu for nav link toggling -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </nav>
+        </header>
+
+        <!-- FIGURE: HERO IMAGE -->
+        <div class="places-to-stay hero-img body-grid-item">
+        </div>
+
+        <!-- MAIN (differs per page) -->
+        <main class="places-to-stay body-grid-item">
+            <h2>Places to Stay in Topsail Beach</h2>
+            <ul>
+                <li><a href="https://www.topsail-realty.com/" target="_blank">Topsail Realty</a></li>
+                <li><a href="https://thebreezewayrestaurant.com/motel/" target="_blank">Breezeway Motel & Restaurant</a></li>
+                <li><a href="https://www.realestatetopsail.com/" target="_blank">Lewis Realty</a></li>
+                <li><a href="https://www.jollyrogertopsailbeach.com/" target="_blank">Jolly Roger Inn & Pier</a></li>
+                <li><a href="https://seavistamotel.com/" target="_blank">Sea Vista Motel</a></li>
+                <li><a href="https://www.wardrealty.com/" target="_blank">Ward Realty</a></li>
+                <li><a href="https://topsailcottages.com/rentals/" target="_blank">Sea Path Realty</a></li>
+                <li><a href="https://www.accessthebeach.com/" target="_blank">Access Realty</a></li>
+                <li><a href="https://www.vacasa.com/?gaad_id=615560578218&utm_campaignid=914997480&utm_adgroupid=79773099284&utm_adposition=&utm_physicalid=9010102" target="_blank">Vacasa</a></li>
+                <li><a href="https://www.topsailvacation.com/" target="_blank">Island Real Estate</a></li>
+                <li><a href="https://abeachplace.com/" target="_blank">A Beach Place Realty</a></li>
+                <li><a href="https://www.seashorerealtync.com/" target="_blank">Sea Shore Realty</a></li>
+                <li><a href="https://guesthousetopsail.com/" target="_blank">The Guest House</a></li>
+                <li><a href="https://seascapevacationhomes.com/" target="_blank">Sea Scape Vacation Homes</a></li>
+            </ul>
+        </main>
+
+        <!-- FOOTER (same on all pages) -->
+        <footer id="contact" class="body-grid-item">
+            <ul>
+                <li>820 S. Anderson Blvd., <br/>Topsail Beach, NC 28445</li>
+                <li>Phone: <a class="tel-link" href="tel:9103285841">910-328-5841</a></li>
+                <li>Fax: <a class="tel-link" href="tel:9103281560">910-328-1560</a></li>
+            </ul>
+            <div class="socials">
+                <h2>Follow us!</h2>
+                <a class="icon" href="https://www.facebook.com/townoftopsailbeach/" target="_blank">
+                    <i class="fa fa-brands fa-square-facebook"></i>
+                </a>
+                <a class="icon" href="https://twitter.com/townoftopsail" target="_blank">
+                    <i class="fa fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS for responsive hamburger menu nav -->
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("nav-links");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }      
+    </script>
+</body>
+</html>

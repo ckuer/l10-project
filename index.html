@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Topsail Beach North Carolina</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CDN Font Awesome library for hamburger menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- container for body content -->
+    <div class="body-grid-container with-aside">
+        <!-- HEADER (same on all pages) -->
+        <header class="body-grid-item">
+            <h1><a href="index.html">Visit Topsail Beach, NC</a></h1>
+            <nav id="nav-links" class="topnav">
+                <a href="#about">About</a>
+                <a href="things-to-do.html">Things to Do</a>
+                <a href="places-to-stay.html">Places to Stay</a>
+                <a href="#contact">Contact us</a>
+                <!-- Hamburger menu for nav link toggling -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </nav>
+        </header>
+
+        <!-- FIGURE: HERO IMAGE -->
+        <div class="about hero-img body-grid-item">
+        </div>
+
+        <!-- MAIN (differs per page) -->
+        <main class="body-grid-item" id="about">
+            <h2>Welcome to Topsail Beach Visitor Website</h2>
+            <h3>About our town</h3>
+            <p>Our welcoming small town is located on the southernmost part of <b>Topsail Island</b>, a 26-miles-long barrier island off the southeast North Carolina coast. Two other communities besides our own populate the island: <b>Surf City</b> above us in the center and <b>North Topsail Beach</b> to the north.</p>
+            <p>Each year, people flock to our beautiful island for relaxing getaways, great fishing spots, and more. <a href="things-to-do.html">There's much to do in Topsail Beach</a> that keeps our visitors coming back.</p>
+            <img src="images/topsail-beach.jpg" alt="Topsail Beach shoreline on a bright day">
+            <h3>Our history</h3>
+            <ul id="history">
+                <li>Pre-World War II, Topsail Island used to only be accessible by boat and would be visited for vacations, fishing trips, and even treasure hunting.</li>
+                <li>During World War II, the US Army made the island the site of an anti-aircraft training base and constructed roads as well as a bridge over the Intracoastal Waterway.</li>
+                <li>Around 1946, WWII's end saw the Navy beginning operations on the island to carry out Operation Bumblebee, a missile development program.</li>
+                <li>In 1948 after the program's closure, Topsail Island was returned to its owners and development began.</li>
+                <li>In 1963, the Town of Topsail Beach was incorporated.</li>
+            </ul>
+            
+            <p>It's said that the name <b>Topsail, pronounced "Tops'l,"</b> originated from the topsails of pirate ships that would hide behind the island. However, the name likely comes from New Topsail Inlet, after which the south end was named New Topsail Beach. </p>
+            <p>For more about our history, consider a trip to our <a href="https://missilesandmoremuseum.org/" target="_blank">Missiles and More Museum</a>.</p>
+        </main>
+
+        <!-- ASIDE -->
+        <aside class="body-grid-item">
+            <img src="images/welcome-sign.JPG" alt="Topsail Beach welcome sign">
+            <h2>Come visit Topsail Beach</h2>
+            <h3>How to find us</h3>
+            <p>Topsail Island is located off <b>US Highway 17</b> between Wilmington and Jacksonville. Take <b>NC-50</b> and cross the Intracoastal Waterway to reach us off the mainland.</p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52687.405704600045!2d-77.63312144999999!3d34.376864950000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a99718ae0ce033%3A0x6db64b89dda5ec1b!2sTopsail%20Beach%2C%20NC!5e0!3m2!1sen!2sus!4v1710982417336!5m2!1sen!2sus" style="width: 100%; border: none;" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p><a href="places-to-stay.html">Looking for accommodations?</a> We're ready to welcome you.</p>
+        </aside>
+
+        <!-- FOOTER (same on all pages) -->
+        <footer id="contact" class="body-grid-item">
+            <ul>
+                <li>820 S. Anderson Blvd., <br/>Topsail Beach, NC 28445</li>
+                <li>Phone: <a class="tel-link" href="tel:9103285841">910-328-5841</a></li>
+                <li>Fax: <a class="tel-link" href="tel:9103281560">910-328-1560</a></li>
+            </ul>
+            <div class="socials">
+                <h2>Follow us!</h2>
+                <a class="icon" href="https://www.facebook.com/townoftopsailbeach/" target="_blank">
+                    <i class="fa fa-brands fa-square-facebook"></i>
+                </a>
+                <a class="icon" href="https://twitter.com/townoftopsail" target="_blank">
+                    <i class="fa fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS for responsive hamburger menu nav -->
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("nav-links");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }      
+    </script>
+</body>
+</html>

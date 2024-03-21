@@ -1,0 +1,339 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #007088;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h3 {
+    background-color: #ffe9eb;
+    width: max-content;
+}
+
+a:hover {
+    color: #FE6786;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: #deedef;
+    font-size: 18px;
+    margin: 0;
+    background-attachment: fixed, scroll;
+    /* background-image: url("images/topsail-beach.jpg");
+    background-size: cover;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat; */
+}
+
+.body-grid-container {
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+}
+
+header h1 {
+    margin-top: 0;
+    padding: 0.75em 0.75em 0.1em 0.75em;
+}
+
+header h1 a {
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav a, main, aside, footer {
+    padding: 1em;
+}
+
+aside {
+    padding-top: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #deedef;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.topnav a {
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+}
+
+.hero-img {
+    height: 350px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-img.about {
+    background-image: url("images/topsail-beach-aerial-view.JPG");
+    background-position: center 40%;
+}
+
+.hero-img.things-to-do {
+    max-height: 375px;
+    background-image: url("images/water-tower.JPG");
+}
+
+.hero-img.places-to-stay {
+    background-image: url("images/sunrise-topsail-north-carolina.jpg");
+    background-position: center 60%;
+}
+
+ul#history {
+    padding-left: 1em;
+}
+
+ul#history li {
+    margin: 0.75em 0;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.things-to-do.main-grid-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.things-to-do.main-grid-item ul li {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: .3em;
+    background-color: #deedef;
+    width: max-content;
+}
+
+.things-to-do.main-grid-item ul li a {
+    color: black;
+}
+
+.things-to-do.main-grid-item ul li a:hover {
+    background-color: #FE6786;
+}
+
+main.places-to-stay {
+    width: 100%;
+    text-align: center;
+}
+
+.places-to-stay h3 {
+    margin: 0 auto;
+}
+
+
+.places-to-stay ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.places-to-stay ul li {
+    margin: 1em 0;
+    font-size: 1.25em;
+}
+
+footer {
+    background-color: #deedef;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 1.75em auto;
+    padding-left: 0;
+    text-align: center;
+}
+
+footer ul li {
+    margin-bottom: 1em;
+}
+
+footer ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.tel-link {
+    font-size: 1.2em;
+}
+
+.socials {
+    text-align: center;
+    margin: 1.75em;
+}
+
+.socials .icon {
+    margin: 0 0.5em;
+}
+
+.socials .icon i {
+    font-size: 48px;
+}
+
+/* Media Query for SMALL SCREENS 650PX AND UNDER */
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 1.25em;
+    }
+
+    .topnav {
+        background-color: white;
+        display: block;
+    }
+
+    .topnav a {
+        display: none;
+        border-top: 2px solid #deedef;
+    }
+
+    .topnav .icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0.6em 0.75em;
+      font-size: 1.4em;
+      border-top: none;
+    }
+
+    .topnav a:hover {
+        background-color: #deedef;
+        color: black;
+    }
+
+    .topnav .icon:hover {
+        color: #007088;
+        background-color: transparent;
+    }
+
+    .topnav.responsive a {
+      display: block;
+    }
+}
+
+/* Media Query for WIDTH OF 725PX AND UP SCREENS */
+@media (min-width: 725px) {
+
+    /* Grid areas */
+    header.body-grid-item {
+        grid-area: header;
+    }
+    .hero-img.body-grid-item {
+        grid-area: img;
+    }
+    main.body-grid-item {
+        grid-area: main;
+    }
+    aside.body-grid-item {
+        grid-area: aside;
+    }
+    footer.body-grid-item {
+        grid-area: footer;
+    }
+
+    /* Grid container */
+    .body-grid-container.with-aside {
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "img img img"
+            "main main aside"
+            "footer footer footer";
+    }
+
+    .body-grid-container.no-aside {
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "img img img"
+            "main main main"
+            "footer footer footer";
+
+    }
+
+    .hero-img {
+        height: 600px;
+    }
+
+    aside {
+        padding-top: 1em;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    footer .socials {
+        margin-top: 0;
+    }
+    
+    /* Grid for Things to Do page within main element */
+    .things-to-do.main-grid-container {
+        margin: 0 auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0.5em;
+    }
+}
+
+/* Media Query for WIDTH OF 835PX AND UP SCREENS */
+@media (min-width: 900px) {
+
+    footer {
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    footer ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    
+    /* Grid for Things to Do page within main element */
+    .things-to-do.main-grid-container {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media (min-width: 1425px) {
+    
+    /* Grid for Things to Do page within main element */
+    .things-to-do.main-grid-container {
+        grid-template-columns: auto auto auto auto;
+    }
+}
